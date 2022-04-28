@@ -1,0 +1,96 @@
+{
+    "study1": {
+        "jurorA": {
+            "color": "#f44336", 
+            "name": "Amanda",
+            "videoPaths": [
+                "videos/juror-a.1.mp4",
+                "videos/juror-a.2.mp4",
+                "videos/juror-a.3.mp4",
+                "videos/juror-a.4.mp4"],
+            "captionPaths": [
+                "captions/juror-a.1.vtt",
+                "captions/juror-a.2.vtt",
+                "captions/juror-a.3.vtt",
+                "captions/juror-a.4.vtt"
+            ]
+        },
+        "jurorB": {
+            "color": "#673ab7", 
+            "name": "Bill",
+            "videoPaths": [
+                "videos/juror-b.1.mp4",
+                "videos/juror-b.2.mp4",
+                "videos/juror-b.3.mp4",
+                "videos/juror-b.4.mp4"],
+            "captionPaths": [
+                "captions/juror-b.1.vtt",
+                "captions/juror-b.2.vtt",
+                "captions/juror-b.3.vtt",
+                "captions/juror-b.4.vtt"
+            ]
+        },
+        "jurorC": {
+            "color": "#ffeb3b", 
+            "name": "Seungyon",
+            "videoPaths": [
+                "videos/juror-c.1.mp4",
+                "videos/juror-c.2.mp4",
+                "videos/juror-c.3.mp4",
+                "videos/juror-c.4.mp4"],
+            "captionPaths": [
+                "captions/juror-c.1.vtt",
+                "captions/juror-c.2.vtt",
+                "captions/juror-c.3.vtt",
+                "captions/juror-c.4.vtt"
+            ]
+        },
+        "juryForeman": {
+            "color": "#4caf50", 
+            "name": "Gabriel",
+            "videoPaths": [
+                "videos/jury-foreman.1.mp4",
+                "videos/jury-foreman.2.mp4",
+                "videos/jury-foreman.3.mp4",
+                "videos/jury-foreman.4.mp4"],
+            "captionPaths": [
+                "captions/jury-foreman.1.vtt",
+                "captions/jury-foreman.2.vtt",
+                "captions/jury-foreman.3.vtt",
+                "captions/jury-foreman.4.vtt"
+            ]
+        },
+        "mergedCaptions": [
+            "captions/combined.1.vtt",
+            "captions/combined.2.vtt",
+            "captions/combined.3.vtt",
+            "captions/combined.4.vtt"
+        ],
+        "conditions": {
+            "condition1": {
+                "desc": "Captions at Base of Screen",                    
+                "speakerWindowHeight": "270px",
+                "speakerWindowWidth":  "337.5px",
+                "coloringEnabled": false
+            },
+            "condition2": {
+                "desc": "Captions at Base of Speaker Window",
+                "speakerWindowHeight": "480px",
+                "speakerWindowWidth": "600px",
+                "coloringEnabled": false
+            },
+            "condition3": {
+                "desc": "Captions at both Base of screen and Speaker Window",
+                "speakerWindowHeight": "270px",
+                "speakerWindowWidth":  "337.5px",
+                "coloringEnabled": false
+            },
+            "condition4": {
+                "desc": "Captions at base of screen and color spotlighting windows",
+                "speakerWindowHeight": "270px",
+                "speakerWindowWidth":  "337.5px",
+                "coloringEnabled": true
+            }
+        }
+    }
+}

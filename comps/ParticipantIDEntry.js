@@ -33,7 +33,7 @@ export default function ParticipantIDEntry() {
             inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
             variant="outlined"
           />
-          <Link href="/instructions">
+          <Link href="/demographics">
             <Button
               variant="contained"
               disableElevation

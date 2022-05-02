@@ -19,7 +19,7 @@ export default function ConditionLayout() {
         p: 2,
       }}
     >
-        <MeetingWindow />
+      <MeetingWindow />
       <CaptionView />
       <ControlBar />
     </Paper>

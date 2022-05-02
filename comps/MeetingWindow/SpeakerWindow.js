@@ -6,15 +6,12 @@ import React from "react";
 import buildConfigs from "../../buildConfigs.js";
 import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
-import { useRouter } from "next/router";
 
 export default function SpeakerWindow({ participant }) {
   let videoPath = participant.videoPaths[buildConfigs.videoSection - 1];
   let captionPath = participant.captionPaths[buildConfigs.videoSection - 1];
   let iconColor = participant.color;
   let name = participant.name;
-  let duration = buildConfigs.videoDuration();
-  const router = useRouter();
 
   function handleSpeakerSubtitles() {
     return buildConfigs.hideCaptionsInWindow()
@@ -43,8 +40,6 @@ export default function SpeakerWindow({ participant }) {
         alignItems: "center",
         justifyContent: "space-around",
         display: "flex",
-        width: "auto",
-        height: "auto",
       }}
     >
       <ReactPlayer
@@ -54,7 +49,6 @@ export default function SpeakerWindow({ participant }) {
         height={buildConfigs.speakerHeight()}
         url={videoPath}
         config={handleSpeakerSubtitles()}
-        onEnded={setTimeout(() => router.push("/survey"), duration + 3000)}
       />
       <SpeakerLabel name={name} color={iconColor} />
     </Card>

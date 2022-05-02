@@ -10,12 +10,12 @@ const juryForeman = study.study1.juryForeman;
 export default function MeetingWindow() {
   return (
     <Box sx={gridLayoutStyles}>
-      <Grid container xl={2} wrap="wrap">
-        <Grid container xl={2} wrap="wrap" sx={gridRowStyles}>
+      <Grid container xl={2}>
+        <Grid container xl={2} sx={gridRowStyles}>
           <SpeakerWindow participant={jurorA} />
           <SpeakerWindow participant={jurorB} />
         </Grid>
-        <Grid container xl={2} wrap="wrap" sx={gridRowStyles}>
+        <Grid container xl={2} sx={gridRowStyles}>
           <SpeakerWindow participant={jurorC} />
           <SpeakerWindow participant={juryForeman} />
         </Grid>
@@ -31,7 +31,6 @@ const gridRowStyles = {
 };
 
 const gridLayoutStyles = {
-  flexGrow: 4,
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

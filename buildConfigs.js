@@ -1,7 +1,7 @@
 const buildConfigs = {
   studyNumber: 1,
-  conditionNumber: 2,
-  videoSection: 4,
+  conditionNumber: 1,
+  videoSection: 1,
   speakerWidth: function () {
     return this.studyNumber == 1 && this.conditionNumber == 2
       ? "600px"

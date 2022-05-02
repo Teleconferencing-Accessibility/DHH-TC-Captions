@@ -13,7 +13,7 @@ const StyledContinueButton = styled(Button)(({}) => ({
 export default function ContinueButton({ text, href }) {
   return (
     <Link href={href}>
-      <StyledContinueButton variant="contained"> {text} </StyledContinueButton>
+      <StyledContinueButton variant="contained" sx= {{mx: 1}}> {text} </StyledContinueButton>
     </Link>
   );
 }

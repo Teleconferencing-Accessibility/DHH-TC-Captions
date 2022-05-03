@@ -11,7 +11,7 @@ export default function demographics() {
             "https://gatech.co1.qualtrics.com/jfe/form/SV_0oW1gC2Y1eny2do"
           }
         />
-        <ContinueButton text={"continue"} href={"/study"} />
+        <ContinueButton text={"continue"} href={"/studyInstructions"} />
       </Stack>
     </Paper>
   );

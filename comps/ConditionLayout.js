@@ -4,7 +4,7 @@ import ControlBar from "./ControlBar";
 import globalcolors from "../styles/globalcolors";
 import CaptionView from "./CaptionView";
 
-export default function ConditionLayout() {
+export default function ConditionLayout({ condition, section }) {
   return (
     <Paper
       sx={{
@@ -19,8 +19,8 @@ export default function ConditionLayout() {
         p: 2,
       }}
     >
-      <MeetingWindow />
-      <CaptionView />
+      <MeetingWindow section={section} condition={condition}/>
+      <CaptionView section={section} condition={condition}/>
       <ControlBar />
     </Paper>
   );

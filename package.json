@@ -16,8 +16,8 @@
     "next": "^11.1.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-player": "^2.10.0"
-
+    "react-player": "^2.10.0",
+    "webgazer": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "8.13.0",

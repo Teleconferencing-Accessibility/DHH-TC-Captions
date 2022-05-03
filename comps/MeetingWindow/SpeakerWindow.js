@@ -7,14 +7,21 @@ import buildConfigs from "../../buildConfigs.js";
 import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
-export default function SpeakerWindow({ participant }) {
-  let videoPath = participant.videoPaths[buildConfigs.videoSection - 1];
-  let captionPath = participant.captionPaths[buildConfigs.videoSection - 1];
+export default function SpeakerWindow({ participant, condition, section }) {
+  let videoPath = participant.videoPaths[section - 1];
+  let captionPath = participant.captionPaths[section - 1];
   let iconColor = participant.color;
   let name = participant.name;
 
+  function speakerWidth() {
+    return condition == 2 ? "600px" : "551.11px";
+  }
+  function speakerHeight() {
+    return condition == 2 ? "337.5px" : "310px";
+  }
+
   function handleSpeakerSubtitles() {
-    return buildConfigs.hideCaptionsInWindow()
+    return condition == 1 || condition == 4
       ? {}
       : {
           file: {
@@ -45,8 +52,8 @@ export default function SpeakerWindow({ participant }) {
       <ReactPlayer
         playing
         muted
-        width={buildConfigs.speakerWidth()}
-        height={buildConfigs.speakerHeight()}
+        width={speakerWidth()}
+        height={speakerHeight()}
         url={videoPath}
         config={handleSpeakerSubtitles()}
       />

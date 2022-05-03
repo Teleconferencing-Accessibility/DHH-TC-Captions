@@ -7,17 +7,17 @@ const jurorB = study.study1.jurorB;
 const jurorC = study.study1.jurorC;
 const juryForeman = study.study1.juryForeman;
 
-export default function MeetingWindow() {
+export default function MeetingWindow({section, condition}) {
   return (
     <Box sx={gridLayoutStyles}>
       <Grid container xl={2}>
         <Grid container xl={2} sx={gridRowStyles}>
-          <SpeakerWindow participant={jurorA} />
-          <SpeakerWindow participant={jurorB} />
+          <SpeakerWindow participant={jurorA} section={section} condition={condition}/>
+          <SpeakerWindow participant={jurorB} section={section} condition={condition}/>
         </Grid>
         <Grid container xl={2} sx={gridRowStyles}>
-          <SpeakerWindow participant={jurorC} />
-          <SpeakerWindow participant={juryForeman} />
+          <SpeakerWindow participant={jurorC} section={section} condition={condition}/>
+          <SpeakerWindow participant={juryForeman} section={section} condition={condition}/>
         </Grid>
       </Grid>
     </Box>

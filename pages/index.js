@@ -40,13 +40,12 @@ export default function Home() {
           sx={{ display: "flex", justifyContent: "flex-end" }}
         >
           <ParticipantIDTextField
-            fullwidth
             sx={{ mr: 2 }}
             label="Participant ID"
             onChange={handleInput}
             inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
           />
-          <ContinueButton href={"/demographics"} disabled={!inputRecieved}>
+          <ContinueButton href={"/test"} disabled={!inputRecieved}>
             continue
           </ContinueButton>
         </Stack>

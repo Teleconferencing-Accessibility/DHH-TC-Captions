@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import { SurveyFlowWrapper } from "../context/state";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <SurveyFlowWrapper>
+      <Component {...pageProps} />
+    </SurveyFlowWrapper>
+  );
 }
 
-export default MyApp
+export default MyApp;

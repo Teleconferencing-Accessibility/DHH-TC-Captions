@@ -1,9 +1,8 @@
-import { Box } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import globalcolors from "../../styles/globalcolors";
 import SpeakerLabel from "./SpeakerLabel";
 import React from "react";
-import buildConfigs from "../../buildConfigs.js";
 import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
@@ -36,7 +35,6 @@ export default function SpeakerWindow({ participant, condition, section }) {
           },
         };
   }
-
   return (
     <Card
       elevation={24}
@@ -57,6 +55,10 @@ export default function SpeakerWindow({ participant, condition, section }) {
         url={videoPath}
         config={handleSpeakerSubtitles()}
       />
+      <Typography>
+        condition: {condition} section: {section}
+      </Typography>
+      
       <SpeakerLabel name={name} color={iconColor} />
     </Card>
   );

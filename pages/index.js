@@ -86,7 +86,7 @@ export default function Home() {
             disabled={textFieldDisabled}
           />
           <ContinueButton
-            href={"/test"}
+            href={"/demographics"}
             disabled={!inputRecieved}
             onClick={setParticipantID}
           >

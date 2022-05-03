@@ -4,6 +4,7 @@ export default  {
     buttonHovered: "#009688",
     buttonClicked: "#004d40",
     buttonFill: '#e0e0e0',
-    backdrop: "#212121",
+    conditionBackdrop: "#212121",
+    surveyBackdrop:"#D6DBD4",
     card: "#616161",
 }

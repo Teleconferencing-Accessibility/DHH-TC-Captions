@@ -1,7 +1,7 @@
 import { Paper, Stack } from "@mui/material";
 import ContinueButton from "../comps/ContinueButton";
 import QualtricsSurvey from "../comps/QualtricsSurvey";
-import background from "../styles/background";
+import background from "../styles/surveyBackdrop";
 export default function demographics() {
   return (
     <Paper sx={background}>

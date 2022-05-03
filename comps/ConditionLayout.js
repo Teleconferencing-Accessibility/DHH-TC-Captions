@@ -13,7 +13,7 @@ export default function ConditionLayout() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: globalcolors.backdrop,
+        backgroundColor: globalcolors.conditionBackdrop,
         flexDirection: "column",
         borderRadius: 0,
         p: 2,

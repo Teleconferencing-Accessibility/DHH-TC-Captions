@@ -6,7 +6,7 @@ export default {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: globalcolors.backdrop,
+  backgroundColor: globalcolors.conditionBackdrop,
   flexDirection: "row",
   borderRadius: 0,
   p: 2,

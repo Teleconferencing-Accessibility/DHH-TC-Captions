@@ -7,9 +7,11 @@ export function SurveyFlowWrapper({ children }) {
 
   let sharedState = {
     participantID: 0,
+    latinSquare: LatinSquare,
     latinSquareRow: LatinSquare[0],
-    currentCondition: LatinSqaure[0][0],
-    currentSection: 1
+    currentCondition: LatinSquare[0][0],
+    currentSection: 1,
+    currentIndex: 0,
 }
   
   return (
